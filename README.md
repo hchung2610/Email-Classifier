@@ -1,6 +1,6 @@
 # cmsc421-email-classifier
 
-This project is an email spam classifier. It trains several models, each with 4 different amounts of training data, to determine the best ML algorithm for our use case at those 4 varying dataset sizes. The dataset we used was https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification.
+This project is an email spam classifier. It trains several models, each with 4 different amounts of training data, to determine the best ML algorithm for our use case at those 4 varying dataset sizes. The dataset can be found in https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification.
 
 The spam_filter_training.ipynb file contains the code that we used to train and save our models.
 
