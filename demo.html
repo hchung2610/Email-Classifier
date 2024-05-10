@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="demo.css">
+    </head>
+    <div class="App">
+        <header class="App-header">
+        <h2>Spam or Ham?</h2>
+        An Email Spam Classifier
+        </header>
+        <form name="userInput">
+            <div class="selectors">
+            <label for="models" class="modelLabel">Choose a model:</label>
+            <select name="model" id="models">
+                <option value="logistic">Logistic Regression</option>
+                <option value="multinb">Multinomial Naive Bayes</option>
+                <option value="bernoullinb">Bernoulli Naive Bayes</option>
+                <option value="randomForest">Random Forest</option>
+                <option value="svm">SVM</option>
+            </select>
+            <label for="variants" class="variantLabel">Choose a variant:</label>
+            <select name="variant" id="variants">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extreme">Extreme</option>
+            </select>
+            </div>
+            <textarea name="email" id="emailInput" rows="10" columns="200" placeholder="Write an email!"></textarea>
+            <input type="submit" value="Predict!"></input>
+        </form>
+        <script type="text/javascript" src="./eventListeners/getPrediction.js" defer></script>
+    </div>
+</html>
